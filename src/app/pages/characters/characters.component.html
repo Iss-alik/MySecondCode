@@ -1,1 +1,20 @@
 <p>characters works!</p>
+Lets see characters: 
+<ng-container #container> </ng-container>
+<script> 
+    var characters_dictionary = 
+    {
+        'Чарли Браун': '#charlibrown',
+        'Лайнус': '#linus',
+        'Люси': '#lucy'
+    };
+    const sign = '@ruspeanuts';
+    for(name in characters_dictionary)
+    {   
+        var character = document.createElement("INPUT");
+        character.setAttribute('type', 'checkbox');
+        //character.setAttribute('text', name);
+        character.setAttribute('value', characters_dictionary[name]);
+        document.app-characters.appendChild(character);
+    }
+</script>

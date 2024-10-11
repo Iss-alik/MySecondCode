@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ElementRef } from '@angular/core';
 import { TelegramService } from '../../services/telegram.service';
 import { Router } from '@angular/router';
 
@@ -10,8 +10,14 @@ import { Router } from '@angular/router';
   styleUrl: './characters.component.css'
 })
 
+
+
 export class CharactersComponent implements OnInit, OnDestroy {
-  
+    characters_dictinary = {
+    'Чарли Браун': '#charlibrown',
+    'Лайнус': '#linus',
+    'Люси': '#lucy'
+  };
   constructor(private telegram: TelegramService,
     private router: Router) 
     {this.goBack = this.goBack.bind(this);}
