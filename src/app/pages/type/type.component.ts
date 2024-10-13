@@ -18,7 +18,7 @@ export class TypeComponent {
     this.goNext = this.goNext.bind(this);
     this.telegram.MainButton.setText('Next');
     this.telegram.MainButton.show();
-    this.telegram.MainButton.onClick(this.goNext);
+    this.telegram.MainButton.onClick(this.sendData);
   } 
   
   sendData()
