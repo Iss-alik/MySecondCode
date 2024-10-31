@@ -1,0 +1,19 @@
+.strip-card{
+    border: 1px solid var(--text_color);
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.strip-image{
+    border-radius: 4px;
+    border: 3px solid black;
+    display: grid;
+}
+
+.strip-card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}

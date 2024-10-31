@@ -1,10 +1,16 @@
 <h2> Work</h2>
 <form action ='/characters'>
-    <input type = 'radio' name = 'type' value="art"> 
+    <input type = 'radio' name = 'type' value="art" (input)="handleChange($event)"> 
     art
-    <input type = 'radio' name = 'type' value="strip"> 
+    <input type = 'radio' name = 'type' value="strip" (input)="handleChange($event)"> 
     strip
-    <input type = 'radio' name = 'type' value="special"> 
+    <input type = 'radio' name = 'type' value="special" (input)="handleChange($event)"> 
     SundaySpecial <br/>
     <input type = 'submit' text = 'next'> 
 </form>
+
+@for (character of characters; track character.name){
+    <input type = 'checkbox' name = 'character' value= {{character.tag}}>{{ character.name}}
+}
+
+<pre> {{answear}} </pre>

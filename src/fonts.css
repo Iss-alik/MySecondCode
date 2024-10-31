@@ -1,0 +1,11 @@
+@font-face {
+    font-display: swap;
+    font-family: 'debby';
+    src: url('/assets/fonts/Debby.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'peanuts';
+    src: url('/assets/fonts/v_CCPulpFictionMedium_v1_1.ttf');
+}

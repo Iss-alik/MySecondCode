@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'fonts.css';
+
+:root{
+ --main_color:  #deb887;
+ --second-color: #2cb72c82;
+ --text_color: #ffffff; 
+}
+
+body{
+    background-color: var(--main_color);
+    color: var(--text_color)
+}
+
+.character-tag{
+    padding: 4px 4px;
+    border-radius: 4px;
+    border: 1px solid var(--text_color);
+    display: inline;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'peanuts';
+    margin-right: 4px;
+    margin-top: 8px;
+}
+
+.btn{
+    border: none;
+    background: var(--second-color);
+    color: var(--text_color);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'debby';
+}
